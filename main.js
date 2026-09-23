@@ -15,10 +15,9 @@ function darkLight(){
         addClassListByClassName("body","light-body")
         addClassListByClassName("darklight","light-darklight")
         addClassListByClassName("brand","light-brand")
-        addClassListByClassName("h1","light-h1-2-3-nav_a")
+        addClassListByClassName("h1-2-3","light-h1-2-3-nav_a")
         addClassListByClassName("nav_button","light-nav_button")
-        addClassListByClassName("p","light-p-label")
-        addClassListByClassName("label","light-p-label")
+        addClassListByClassName("p-a-label","light-p-a-label")
 
     } else {
 
@@ -26,10 +25,9 @@ function darkLight(){
         removeClassListByClassName("body","light-body")
         removeClassListByClassName("darklight","light-darklight")
         removeClassListByClassName("brand","light-brand")
-        removeClassListByClassName("h1","light-h1-2-3-nav_a")
+        removeClassListByClassName("h1-2-3","light-h1-2-3-nav_a")
         removeClassListByClassName("nav_button","light-nav_button")
-        removeClassListByClassName("p","light-p-label")
-        removeClassListByClassName("label","light-p-label")
+        removeClassListByClassName("p-a-label","light-p-a-label")
         
     }
 }

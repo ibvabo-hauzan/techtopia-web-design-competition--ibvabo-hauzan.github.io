@@ -24,12 +24,12 @@ h4,h5,h6{
   color: #808080;
   text-shadow: #80808080 0px 0px 5px;
 }
-p,label{
+p,a,label{
   font-family: 'JetBrains Mono', monospace;
   color: #ffffff;
   text-shadow: #ffffff80 0px 0px 20px;
 }
-.light-p-label{
+.light-p-a-label{
   color: #000000;
 }
 img{
@@ -73,11 +73,11 @@ img{
   gap: 10px;
 }
 .nav_button{
-  font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   text-align: center;
   text-decoration:none;
   color: #3ee6ff;
+  text-shadow: #3ee6ff80 0px 0px 20px;
   background-color: #3c00ff20;
   padding: 2px;
   border: 1px outset #8800ff;
@@ -134,9 +134,7 @@ img{
   width:600px
 }
 .home_text a{
-  font-family:'JetBrains Mono', monospace;
   text-decoration: none;
-  color: #ffffff;
   background-image: linear-gradient(45deg, #8000ff, #ff0080);
   padding: 5px;
   border-radius: 15px;
@@ -166,9 +164,7 @@ img{
   justify-content: space-between;
 }
 .landmarks_text a{
-  font-family:'JetBrains Mono', monospace;
   text-decoration: none;
-  color: #ffffff;
   background-image: linear-gradient(45deg, #8000ff, #ff0080);
   padding: 5px;
   border-radius: 15px;
@@ -192,9 +188,7 @@ img{
   gap: 10px;
 }
 .yt{
-  font-family:'JetBrains Mono', monospace;
   text-decoration: none;
-  color: #ffffff;
   background-image: linear-gradient(45deg, #ff8000, #ff0080);
   padding: 5px;
   border-radius: 15px;
@@ -205,9 +199,7 @@ img{
   color: #ff0000;
 }
 .ig{
-  font-family:'JetBrains Mono', monospace;
   text-decoration: none;
-  color: #ffffff;
   background-image: linear-gradient(45deg, #ff00ff, #ffc400);
   padding: 5px;
   border-radius: 15px;
