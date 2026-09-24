@@ -9,24 +9,21 @@
 </head>
 <body class="body">
     <script src="main.js"></script>
-    <nav>
-        <div class="navbar">
-            <a href="#" class="brand">
-                <span class="brand-bracket">[</span>HZ<span class="brand-bracket">]</span>
-                <span class="brand-full">Studio</span>
-            </a>
-            <div class="nav_sect">
-                <a href="#home" class="nav_button">Home🏠</a>
-                <a href="#about" class="nav_button">About🔍</a>
-                <a href="#landmarks" class="nav_button">Landmarks🏢</a>
-                <a href="#creations" class="nav_button">Creations🛠️</a>
-                <a href="#traditions" class="nav_button">Traditions🕺</a>
-                <a href="#economy" class="nav_button">Economy📈</a>
-                <a href="#contacts" class="nav_button">Contacts📞</a>
-            </div>
-            <button class="darklight" id="darklight" onclick="darkLight()">Light Mode</button>
+    <nav class="navbar">
+        <a href="#" class="brand">
+            <span class="brand-bracket">[</span>HZ<span class="brand-bracket">]</span>
+            <span class="brand-full">Studio</span>
+        </a>
+        <div class="nav_sect">
+            <a href="#home" class="nav_button">Home🏠</a>
+            <a href="#about" class="nav_button">About🔍</a>
+            <a href="#landmarks" class="nav_button">Landmarks🏢</a>
+            <a href="#creations" class="nav_button">Creations🛠️</a>
+            <a href="#traditions" class="nav_button">Traditions🕺</a>
+            <a href="#economy" class="nav_button">Economy📈</a>
+            <a href="#contacts" class="nav_button">Contacts📞</a>
         </div>
-        <hr>
+        <button class="darklight" id="darklight" onclick="darkLight()"><i class="bi bi-sun-fill" id="darklight_symbol"></i></button>
     </nav>
     <header class="home bg" id="home">
         <div class="home_text">
@@ -154,7 +151,7 @@
     </section>
     <footer id="contacts">
         <div class="contacts">
-            <div class="contact">
+            <div class="contact" id="my_contact">
                 <label class="p-a-label">My Contacts:</label>
                 <a href="https://www.youtube.com/@Ibvabo-hauzan" target="_blank" class="yt p-a-label"><i class="bi bi-youtube"></i> ibvabo-hauzan <i class="bi bi-arrow-left-circle-fill"></i></a>
                 <a href="https://www.instagram.com/ibvabo_hauzan/" target="_blank" class="ig p-a-label"><i class="bi bi-instagram"></i> ibvabo_hauzan <i class="bi bi-arrow-left-circle-fill"></i></a>
@@ -163,7 +160,7 @@
                 <h2 class="h1-2-3">Thank you</h2>
                 <p class="p-a-label">I hope this website teaches you something. I put my heart and soul into this and no ai is used in this entire website.</p>
             </div>
-            <div class="contact">
+            <div class="contact" id="tech_contact">
                 <label class="p-a-label">Techtopia Competition:</label>
                 <a href="https://www.instagram.com/techtopia.hmjti/" target="_blank" class="ig p-a-label"><i class="bi bi-instagram"></i> techtopia.hmjti <i class="bi bi-arrow-left-circle-fill"></i></a>
                 <a href="https://www.instagram.com/hmj_ti.undiksha/" target="_blank" class="ig p-a-label"><i class="bi bi-instagram"></i> hmj_ti.undiksha <i class="bi bi-arrow-left-circle-fill"></i></a>

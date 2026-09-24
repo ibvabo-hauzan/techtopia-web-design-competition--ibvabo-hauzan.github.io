@@ -1,17 +1,16 @@
 /* All of the pages */
 body{
-  background-image: radial-gradient(circle, #100044, #000a24);
+  background-color: #100044;
+  transition: 0.5s;
 }
 .light-body{
-  background-image: radial-gradient(circle, #ffffff, #f4f0ff);
-}
-hr{
-  border-color: #8800ff;
+  background-color: #f4f0ff;
 }
 h1,h2,h3{
   font-family: 'Orbitron', sans-serif;
   color: #00ffff;
   text-shadow: #00ffff80 0px 0px 20px;
+  transition: 0.5s;
 }
 .light-h1-2-3-nav_a{
   color: #0000ff;
@@ -28,6 +27,7 @@ p,a,label{
   font-family: 'JetBrains Mono', monospace;
   color: #ffffff;
   text-shadow: #ffffff80 0px 0px 20px;
+  transition: 0.5s;
 }
 .light-p-a-label{
   color: #000000;
@@ -50,6 +50,7 @@ img{
 .container{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card{
   background-color: #3c00ff20;
@@ -64,12 +65,25 @@ img{
 }
 /* navigation bar */
 .navbar{
+  background-color: #100044d0;
+  padding: 10px 0;
+  border-bottom: 1px solid #8000ff;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items:center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+  transition: 0.5s;
+}
+.light-navbar{
+  background-color: #f4f0ff;
 }
 .nav_sect{
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .nav_button{
@@ -89,14 +103,16 @@ img{
 }
 .darklight{
   font-family: 'JetBrains Mono', monospace;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   color: #ffffff;
   background-color: #12004d;
+  padding: 2px 4px;
   border: 2px outset #8800ff;
-  border-radius: 20px;
-  width: 120px;
+  border-radius: 100%;
+  width: fit-content;
   height: fit-content;
+  transition: 0.5s;
 }
 .light-darklight{
   color: #000000;
@@ -130,8 +146,11 @@ img{
 }
 
 /* home section */
+.home{
+  margin-top: 100px;
+}
 .home_text p{
-  width:600px
+  width:auto
 }
 .home_text a{
   text-decoration: none;
@@ -144,15 +163,17 @@ img{
   color: #ff00ff;
 }
 .home img{
+  margin-left: 200px;
   width: 300px;
   height: fit-content;
 }
 
 /* about section */
 .about_text p{
-  width: 600px;
+  width: auto;
 }
 .about img{
+  margin-left: 200px;
   width: 300px;
   height: fit-content;
 }
@@ -187,6 +208,12 @@ img{
   flex-direction: column;
   gap: 10px;
 }
+#my_contact a{
+  width: 170px;
+}
+#tech_contact a{
+  width: 185px;
+}
 .yt{
   text-decoration: none;
   background-image: linear-gradient(45deg, #ff8000, #ff0080);
@@ -209,11 +236,44 @@ img{
   background-image: linear-gradient(45deg, #ffd0ff, #ffe0aa);
   color: #ff00ff;
 }
-footer p{
-  width: 600px
+footer h2,footer p{
+  margin: 0px 50px;
 }
 footer h5{
   font-size: 12px;
   text-align: center;
   font-style: normal;
+}
+
+@media(max-width:1100px){
+  .bg{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .brand-full{
+    font-size: 0;
+  }
+  .home{
+    margin-top: 200px;
+  }
+  .home img,.about img{
+    margin: 0px;
+  }
+  .card{
+    width: fit-content;
+  }
+  .card img{
+    width: 250px;
+    height: 175px;
+  }
+  .contacts{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer_text{
+    order: 3;
+  }
+  .footer_text h2,.footer_text p{
+    margin: 0px 0px;
+  }
 }
