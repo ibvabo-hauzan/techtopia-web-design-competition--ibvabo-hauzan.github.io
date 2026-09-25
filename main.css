@@ -79,7 +79,7 @@ img{
   transition: 0.5s;
 }
 .light-navbar{
-  background-color: #f4f0ff;
+  background-color: #f4f0ffd0;
 }
 .nav_sect{
   display: flex;
@@ -101,6 +101,12 @@ img{
 .light-nav_button{
   color: #0000ff;
 }
+.darklight_toggler{
+  padding: 2px;
+  border: 1px outset #8800ff;
+  border-radius: 50px;
+  width: 60px;
+}
 .darklight{
   font-family: 'JetBrains Mono', monospace;
   font-size: 20px;
@@ -117,6 +123,7 @@ img{
 .light-darklight{
   color: #000000;
   background-color: #ffffff;
+  transform: translateX(28px);
 }
 .brand{
   font-family:'Orbitron', sans-serif;
@@ -253,6 +260,12 @@ footer h5{
   .brand-full{
     font-size: 0;
   }
+  .darklight_toggler{
+    border: none;
+  }
+  .light-darklight{
+    transform: translateX(0);
+  }
   .home{
     margin-top: 200px;
   }
@@ -260,7 +273,7 @@ footer h5{
     margin: 0px;
   }
   .card{
-    width: fit-content;
+    width: 100%;
   }
   .card img{
     width: 250px;
@@ -275,5 +288,24 @@ footer h5{
   }
   .footer_text h2,.footer_text p{
     margin: 0px 0px;
+  }
+}
+@media(max-width:768px){
+  .nav_sect a{
+    font-size: 14px;
+    width: 100px;
+  }
+  .home_text p{
+    font-size: 13px;
+  }
+  .home img,.about img{
+    width: 200px;
+  }
+  .card img{
+    width: 200px;
+    height: 125px;
+  }
+  .landmarks_text a{
+    width: 200px;
   }
 }
